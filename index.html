@@ -28,10 +28,6 @@
     a.download-button:hover {
       background-color: #e55a00;
     }
-    img {
-      border: 2px solid #ff6600;
-      border-radius: 5px;
-    }
     .section {
       margin: 30px 0;
       text-align: left;
@@ -44,15 +40,11 @@
       color: #aaa;
       margin-top: 40px;
     }
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr; /* 1 column = stacked vertically */
-      gap: 20px;                 /* spacing between images */
-      justify-items: center;      /* center the images horizontally */
-    }
-    .grid-item img {
-      width: 80%;        /* make images bigger */
+    .screenshots img {
+      width: 80%;
       max-width: 800px;
+      display: block;
+      margin: 20px auto;
       border: 2px solid #ff6600;
       border-radius: 5px;
     }
@@ -70,20 +62,18 @@
     <p>I started this project because I couldn’t find a full Borderlands 2 map in Minecraft, so I decided to make one myself. I wanted to bring Pandora into Minecraft with attention to detail, scale, and the iconic art style. The map is being built following the main story progression for logical exploration.</p>
   </div>
 
-  <div class="section">
+  <div class="section screenshots">
     <h2>Screenshots</h2>
-    <div class="grid-container">
-      <div class="grid-item"><img src="images/1.png" alt="Screenshot 1"></div>
-      <div class="grid-item"><img src="images/2.png" alt="Screenshot 2"></div>
-      <div class="grid-item"><img src="images/3.png" alt="Screenshot 3"></div>
-      <div class="grid-item"><img src="images/4.png" alt="Screenshot 4"></div>
-      <div class="grid-item"><img src="images/5.png" alt="Screenshot 5"></div>
-      <div class="grid-item"><img src="images/6.png" alt="Screenshot 6"></div>
-      <div class="grid-item"><img src="images/7.png" alt="Screenshot 7"></div>
-      <div class="grid-item"><img src="images/8.png" alt="Screenshot 8"></div>
-      <div class="grid-item"><img src="images/9.png" alt="Screenshot 9"></div>
-      <div class="grid-item"><img src="images/10.png" alt="Screenshot 10"></div>
-    </div>
+    <img src="images/1.png" alt="Screenshot 1">
+    <img src="images/2.png" alt="Screenshot 2">
+    <img src="images/3.png" alt="Screenshot 3">
+    <img src="images/4.png" alt="Screenshot 4">
+    <img src="images/5.png" alt="Screenshot 5">
+    <img src="images/6.png" alt="Screenshot 6">
+    <img src="images/7.png" alt="Screenshot 7">
+    <img src="images/8.png" alt="Screenshot 8">
+    <img src="images/9.png" alt="Screenshot 9">
+    <img src="images/10.png" alt="Screenshot 10">
   </div>
 
   <div class="section">
@@ -101,4 +91,5 @@
 
 </body>
 </html>
+
 
