@@ -3,30 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Borderlands 2 Minecraft Map</title>
+  <title>Borderlands 2 Minecraft Map 🌌</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background: #1a1a1a;
-      color: #f0f0f0;
-      text-align: center;
+      color: #e0e0e0;
+      line-height: 1.6;
     }
 
     header {
-      background: #222;
+      background: linear-gradient(90deg, #222, #111);
       padding: 1rem 0;
       position: sticky;
       top: 0;
       z-index: 1000;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     }
 
     nav a {
-      color: #f0f0f0;
+      color: #e0e0e0;
       margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s;
     }
 
     nav a:hover {
@@ -35,67 +38,145 @@
 
     section {
       padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      scroll-margin-top: 100px; /* Sticky header offset */
     }
 
-    .screenshots img {
-      width: 80%;
-      max-width: 800px;
-      margin: 1rem 0;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    h1, h2 {
+      color: #ffcc00;
+      margin-bottom: 1rem;
+    }
+
+    a.download-btn {
+      display: inline-block;
+      background: #ffcc00;
+      color: #1a1a1a;
+      padding: 12px 24px;
+      margin-top: 1rem;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    a.download-btn:hover {
+      background: #e6b800;
+      transform: scale(1.05);
+    }
+
+    a.contact-link {
+      color: #88c0d0;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a.contact-link:hover {
+      color: #a3d0e5;
     }
 
     footer {
       background: #222;
       padding: 1rem;
-      margin-top: 2rem;
+      text-align: center;
       font-size: 0.9rem;
+      margin-top: 2rem;
+      border-top: 2px solid #ffcc00;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section h2 {
+      position: relative;
+      display: inline-block;
+    }
+
+    section h2::after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 50%;
+      background: #ffcc00;
+      margin: 6px auto 0;
+      border-radius: 2px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Borderlands 2 Minecraft Map</h1>
+    <h1>Borderlands 2 Minecraft Map 🌌</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#screenshots">Screenshots</a>
-      <a href="#download">Download</a>
-      <a href="#contact">Contact</a>
+      <a href="#about">📝 About</a>
+      <a href="#download">⬇️ Download</a>
+      <a href="#questions">❓ Q&A</a>
+      <a href="#contact">📬 Contact</a>
     </nav>
   </header>
 
   <section id="about">
-    <h2>About the Project</h2>
-    <p>A full-scale recreation of Pandora from Borderlands 2, built in Minecraft.</p>
-  </section>
-
-  <section id="screenshots" class="screenshots">
-    <h2>Screenshots</h2>
-    <img src="images/01.png" alt="Screenshot 1">
-    <img src="images/02.png" alt="Screenshot 2">
-    <img src="images/03.png" alt="Screenshot 3">
-    <img src="images/04.png" alt="Screenshot 4">
-    <img src="images/05.png" alt="Screenshot 5">
-    <img src="images/06.png" alt="Screenshot 6">
-    <img src="images/07.png" alt="Screenshot 7">
-    <img src="images/08.png" alt="Screenshot 8">
-    <img src="images/09.png" alt="Screenshot 9">
-    <img src="images/10.png" alt="Screenshot 10">
+    <h2>📝 About the Project</h2>
+    <p>
+      This project is a full-scale recreation of Pandora from <strong>Borderlands 2</strong>, built inside Minecraft.  
+      The idea started because no complete map existed online — so I decided to make one myself.
+    </p>
+    <p>
+      The build follows the progression of the Borderlands 2 main story, one area at a time.  
+      Every structure is recreated carefully using a mix of <strong>hand-building</strong> and <strong>WorldEdit</strong>.  
+      To capture the unique Borderlands comic-book style, <strong>Sildur’s Shaders</strong> are used.
+    </p>
+    <p>
+      This is a <strong>work-in-progress</strong> project, developed solo. Some areas can take days or even weeks to finish.  
+      The goal is to complete all of Pandora! 🌍
+    </p>
   </section>
 
   <section id="download">
-    <h2>Download</h2>
-    <p><a href="https://www.mediafire.com/file/exsa65o0h4dajm5/pandora_2.zip/file" target="_blank">Click here to download the map</a></p>
+    <h2>⬇️ Download</h2>
+    <p>
+      The world download is hosted on MediaFire. You can download the map safely via the official link below:
+    </p>
+    <a class="download-btn" href="https://www.mediafire.com/file/exsa65o0h4dajm5/pandora_2.zip/file" target="_blank">
+      Download via MediaFire 📦
+    </a>
+  </section>
+
+  <section id="questions">
+    <h2>❓ Community Q&A</h2>
+    <p><strong>Q: How accurate is the map compared to Borderlands 2?</strong><br>
+    A: The map closely follows the in-game layout and story progression. Some compromises are made for Minecraft's blocky style.</p>
+
+    <p><strong>Q: How long does it take to build each area?</strong><br>
+    A: Depending on the size, each area can take a few days to a few weeks since it is built solo.</p>
+
+    <p><strong>Q: Do you use mods or tools?</strong><br>
+    A: <strong>WorldEdit</strong> is used for terraforming and bulk structures, and hand-building handles fine details. Sildur’s Shaders replicate the cel-shaded look.</p>
+
+    <p><strong>Q: Will the map include NPCs, quests, or enemies?</strong><br>
+    A: Commands for NPCs and mobs can be added to the world, allowing optional interactivity.</p>
+
+    <p><strong>Q: Can I use this map for my own projects or servers?</strong><br>
+    A: Permission is required. Please contact me via GitHub or PlanetMinecraft first.</p>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>For permissions or questions, please reach out via GitHub or PlanetMinecraft.</p>
+    <h2>📬 Contact</h2>
+    <p>
+      For permissions, questions, or feedback, reach out here:
+    </p>
+    <p>
+      • <a href="https://github.com/Beuxz" class="contact-link" target="_blank">GitHub 🐱</a><br>
+      • <a href="https://www.planetminecraft.com/project/borderlands-2-whole-map-wip/" class="contact-link" target="_blank">PlanetMinecraft 🌐</a>
+    </p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Bekulainen. This project cannot be used, redistributed, or modified without explicit permission.</p>
+    <p>&copy; 2025 Bekulainen. This map can only be used with permission — please ask first. 🔒</p>
   </footer>
 </body>
 </html>
+
+
 
