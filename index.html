@@ -7,88 +7,95 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #1b1b1b;
+      margin: 0;
+      padding: 0;
+      background: #1a1a1a;
       color: #f0f0f0;
       text-align: center;
-      padding: 20px;
     }
-    h1 {
-      color: #ff6600;
+
+    header {
+      background: #222;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    a.download-button {
-      background-color: #ff6600;
-      color: #fff;
-      padding: 12px 25px;
+
+    nav a {
+      color: #f0f0f0;
+      margin: 0 15px;
       text-decoration: none;
-      border-radius: 5px;
       font-weight: bold;
-      display: inline-block;
-      margin: 15px 0;
     }
-    a.download-button:hover {
-      background-color: #e55a00;
+
+    nav a:hover {
+      color: #ffcc00;
     }
-    .section {
-      margin: 30px 0;
-      text-align: left;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
+
+    section {
+      padding: 3rem 1rem;
     }
-    .permissions {
-      font-size: 0.9em;
-      color: #aaa;
-      margin-top: 40px;
-    }
+
     .screenshots img {
       width: 80%;
       max-width: 800px;
-      display: block;
-      margin: 20px auto;
-      border: 2px solid #ff6600;
-      border-radius: 5px;
+      margin: 1rem 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+    }
+
+    footer {
+      background: #222;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Borderlands 2 Minecraft Map</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#download">Download</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <h1>Welcome to the Borderlands 2 Minecraft Map!</h1>
-  <p>Explore Pandora in Minecraft with this full-scale recreation.</p>
-
-  <a href="https://www.mediafire.com/file/exsa65o0h4dajm5/pandora_2.zip/file" target="_blank" class="download-button">Download Map</a>
-
-  <div class="section">
+  <section id="about">
     <h2>About the Project</h2>
-    <p>I started this project because I couldn’t find a full Borderlands 2 map in Minecraft, so I decided to make one myself. I wanted to bring Pandora into Minecraft with attention to detail, scale, and the iconic art style. The map is being built following the main story progression for logical exploration.</p>
-  </div>
+    <p>A full-scale recreation of Pandora from Borderlands 2, built in Minecraft.</p>
+  </section>
 
-  <div class="section screenshots">
+  <section id="screenshots" class="screenshots">
     <h2>Screenshots</h2>
-    <img src="images/1.png" alt="Screenshot 1">
-    <img src="images/2.png" alt="Screenshot 2">
-    <img src="images/3.png" alt="Screenshot 3">
-    <img src="images/4.png" alt="Screenshot 4">
-    <img src="images/5.png" alt="Screenshot 5">
-    <img src="images/6.png" alt="Screenshot 6">
-    <img src="images/7.png" alt="Screenshot 7">
-    <img src="images/8.png" alt="Screenshot 8">
-    <img src="images/9.png" alt="Screenshot 9">
+    <img src="images/01.png" alt="Screenshot 1">
+    <img src="images/02.png" alt="Screenshot 2">
+    <img src="images/03.png" alt="Screenshot 3">
+    <img src="images/04.png" alt="Screenshot 4">
+    <img src="images/05.png" alt="Screenshot 5">
+    <img src="images/06.png" alt="Screenshot 6">
+    <img src="images/07.png" alt="Screenshot 7">
+    <img src="images/08.png" alt="Screenshot 8">
+    <img src="images/09.png" alt="Screenshot 9">
     <img src="images/10.png" alt="Screenshot 10">
-  </div>
+  </section>
 
-  <div class="section">
-    <h2>Building Process</h2>
-    <ul>
-      <li>Time to complete a location: A few days to a few weeks (working solo)</li>
-      <li>Tools used: WorldEdit for bulk building and hand-building for detail</li>
-      <li>Art style: Sildur’s Shaders for a cel-shaded Borderlands look</li>
-    </ul>
-  </div>
+  <section id="download">
+    <h2>Download</h2>
+    <p><a href="https://www.mediafire.com/file/exsa65o0h4dajm5/pandora_2.zip/file" target="_blank">Click here to download the map</a></p>
+  </section>
 
-  <div class="section permissions">
-    <p><strong>Permissions:</strong> This map cannot be used, redistributed, or modified without explicit permission from the creator. Please contact me via GitHub or PlanetMinecraft before using it.</p>
-  </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>For permissions or questions, please reach out via GitHub or PlanetMinecraft.</p>
+  </section>
 
+  <footer>
+    <p>&copy; 2025 Bekulainen. This project cannot be used, redistributed, or modified without explicit permission.</p>
+  </footer>
 </body>
 </html>
 
